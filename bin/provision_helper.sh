@@ -16,7 +16,7 @@ if [ ! -f /usr/local/bin/jq ]
 fi
 
 HOSTNAME=`hostname`
-IP_ADDRESS=`ifconfig eth0 | grep "inet addr:" | awk '{print $2}' | awk -F":" '{print $2}'`
+IP_ADDRESS=`ifconfig eth1 | grep "inet addr:" | awk '{print $2}' | awk -F":" '{print $2}'`
 
 rebuild_catalog() {
   if [ -f $JSONFile ] 
