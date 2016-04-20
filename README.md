@@ -15,7 +15,7 @@ Download and install Vagrant via the
 ### Clone repository
 
 ``` bash
-$ git clone https://github.com/angrycub/simple_riakcs_vagrant.git
+$ git clone https://github.com/angrycub/simple-riak-cluster.git
 $ cd simple_riakcs_vagrant
 ```
 
@@ -23,28 +23,6 @@ $ cd simple_riakcs_vagrant
 
 ``` bash
 $ vagrant up
-```
-<!--
-### Environmental variables
-
-- `RIAK_CS_CREATE_ADMIN_USER` – A flag signaling whether you want an
-  administrative user for Riak CS to be created for you (default: `true`)
--->
-### Test cluster
-
-The provisioning script will create an .s3cfg file in the **vagrant** user's home directory with the correct settings for this cluster's Riak CS configuration.  The changes are described below:
-
-* **Access Key** - Replaced with generated values from provisioning.
-* **Secret Key** - Replaced with generated values from provisioning
-* **Proxy Server**: `localhost`
-* **Proxy Port**: `8080`
-* **signature_v2**: `True` - `s3cmd` defaults to AWS v4 authentication, whereas Riak CS does not support this yet.  See also
-[issue 897](https://github.com/basho/riak_cs/issues/897).
-
-The following command can be used to test the configuration:
-
-``` bash
-$ s3cmd mb s3://test-bucket
 ```
 
 ## Contribution
