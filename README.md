@@ -1,7 +1,6 @@
-# Simple Riak CS Vagrant Cluster
+# Simple Riak Vagrant Cluster
 
-This is a Vagrant project using shell-script provisioning to bring up a local [Riak
-CS](https://github.com/basho/riak_cs) cluster. Each node runs 
+This is a Vagrant project using shell-script provisioning to bring up a local [Riak](https://github.com/basho/riak) cluster. Each node runs 
 `CentOS 6.5` 64-bit with `1024MB` of RAM by default.
 
 ## Configuration
